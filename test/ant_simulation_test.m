@@ -1,5 +1,7 @@
 % Test and visualise ant_simulation
 
+load("./antview/world5000_gray.mat")
+
 % [x_nest, y_nest, world_bound, route_length, step_size]
 test_cases = [[6.3, 8.45, 10, 7, 0.5],
                 [5.4, 4.5, 10, 10, 1],
