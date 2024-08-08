@@ -12,8 +12,6 @@ rng(random_seed);
 eye_height = 0.01; % [m]
 resolution = 400; % [degrees/pixel]
 hfov = 296; % [degrees]
-scan_range = 10; % [degrees]
-scan_step = 2; % [degrees]
 raw_images = struct;
 
 % world bounds
