@@ -106,6 +106,9 @@ while distance_travelled < length + radius * 2
     threshold = 0.2; % need test to check if this is an appropriate number
     valid_directions = find(EN_pool < threshold);
     
+    % if there are view/s where the EN output is bellow the threshold head
+    % in the heading of the minimum EN output, else continue on from the
+    % previous direction
     if ~isempty(valid_directions)
         [~, local_index] = min(EN_pool(valid_directions));
         index = valid_directions(local_index);
