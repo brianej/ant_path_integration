@@ -90,7 +90,7 @@ while distance_travelled < length + radius * 2
         temp_img_5 = reshape(temp_img_4, numPN, 1);
         temp_img = temp_img_5./sqrt(sum(temp_img_5.^2));
         temp_img = temp_img*C_I_PN_var;
-        input = (temp_img);
+        input = gpuArray(temp_img);
 
         % call the network
         gpu_net;
