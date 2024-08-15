@@ -1,4 +1,6 @@
 
+clc; reset(gpuDevice);
+
 % load saved variables and world
 load("ant_data/nest1.mat");
 load('./antview/world5000_gray.mat');
