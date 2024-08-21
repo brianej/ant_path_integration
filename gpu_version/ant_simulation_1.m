@@ -1,7 +1,7 @@
 % generates a random route for an ants simulation inside the bound of the
 % world with error added on in the route
 
-function [home_vector_r, home_vector_f, route_r, route_f] = ant_simulation(x_nest, y_nest, world_bound, route_length, step_size)
+function [home_vector_r, home_vector_f, route_r, route_f] = ant_simulation_1(x_nest, y_nest, world_bound, route_length, step_size)
     % location of the nest
     nest = [x_nest, y_nest];
     
